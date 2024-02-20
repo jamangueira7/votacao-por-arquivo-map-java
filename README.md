@@ -58,6 +58,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   - Entre no repositório na pasta `src`.
   - Rode `javac Main.java` para compilar.
   - Rode `java Main.java` para executar no terminal.
+  - Criar pasta `files` na raiz do projeto.
 
 ## 🤔 Como contribuir
 
