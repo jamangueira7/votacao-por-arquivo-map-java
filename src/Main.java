@@ -91,6 +91,11 @@ public class Main {
             System.out.println("Contabilizando votos virtualmente: ");
             System.out.println("Total de votos: " + voters.size());
 
+            candidateObj4.setTotalVotes(voters.size());
+            candidateObj1.setTotalVotes(voters.size());
+            candidateObj3.setTotalVotes(voters.size());
+            candidateObj2.setTotalVotes(voters.size());
+
             int i = candidates.size() - 1;
             for (Candidate can: candidates.values()) {
                 if(i-- == 0){
@@ -143,6 +148,11 @@ public class Main {
 
             System.out.println();
             System.out.println("Finalizando contagem de votos por arquivos: ");
+
+            candidateObj4.setTotalVotes(files.length);
+            candidateObj1.setTotalVotes(files.length);
+            candidateObj3.setTotalVotes(files.length);
+            candidateObj2.setTotalVotes(files.length);
 
             System.out.println();
             System.out.println("Contabilizando votos por arquivo: ");

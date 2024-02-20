@@ -6,8 +6,8 @@ public class Candidate implements Comparable<Candidate>{
 
     private String name;
     private int number;
-
     private Integer voteNumber;
+    private Integer total;
 
     public Candidate(String name, int number, int voteNumber) {
         this.name = name;
@@ -43,6 +43,10 @@ public class Candidate implements Comparable<Candidate>{
         this.voteNumber = 0;
     }
 
+    public void setTotalVotes(Integer total) {
+        this.total = total;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -63,7 +67,13 @@ public class Candidate implements Comparable<Candidate>{
 
     @Override
     public String toString() {
-        return "Total de votos do " + getName() + "(" + getNumber() + "): " + getVoteNumber();
+
+        return "Total de votos do " + getName() + "(" + getNumber() + "): " + getVoteNumber() + " - " + String.format("%,.2f", this.calculatePercentageOfVotes()) + "% do total.";
+    }
+
+    private double calculatePercentageOfVotes() {
+        return ((double)this.voteNumber / (double)total) * 100;
     }
 }
+
 
