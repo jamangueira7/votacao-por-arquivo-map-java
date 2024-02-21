@@ -25,6 +25,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Ler esses arquivos e reconta os votos.
 - Aprenseta o resultado da recontagem com o vencedor e o numero de votantes.
 
+#### Interação com o usuario para saber quantidade de eleitores
+
+![img_8.png](.github%2Fimg_8.png)
 
 #### Apagando arquivos da votação anterior
 
@@ -37,6 +40,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![img_5.png](.github%2Fimg_5.png)
 
 ![img_4.png](.github%2Fimg_4.png)
+
+#### Escolhendo o tipo de contagem
+
+![img_9.png](.github%2Fimg_9.png)
 
 #### Contagem dos votos virtuais
 
