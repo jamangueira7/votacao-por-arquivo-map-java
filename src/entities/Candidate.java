@@ -68,7 +68,10 @@ public class Candidate implements Comparable<Candidate>{
     @Override
     public String toString() {
 
-        return "Total de votos do " + getName() + "(" + getNumber() + "): " + getVoteNumber() + " - " + String.format("%,.2f", this.calculatePercentageOfVotes()) + "% do total.";
+        return "Total de votos do " + getName() + "(" + getNumber() + "): "
+                + getVoteNumber() + " - "
+                + String.format("%,.2f", this.calculatePercentageOfVotes())
+                + "% do total.";
     }
 
     private double calculatePercentageOfVotes() {
